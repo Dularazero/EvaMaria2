@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Discussion Group", url=invite_link.invite_link
+                    "✨ Join Our Backup Channel ✨", url=invite_link.invite_link
                 )
             ]
         ]
@@ -78,7 +78,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**💢 Please Our Backup Channel to use this Bot! 💢**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
